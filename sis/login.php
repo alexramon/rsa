@@ -11,7 +11,7 @@
 	<div id="divConteudo">
 		<div id="divCentral">
 
-			<img src="logoRsa.jpg" id="imgLogo">
+		<img src="logoRsa.jpg" id="imgLogo">
 
 		<form method="post" action="userauthentication2.php" id="form">
 
@@ -20,7 +20,7 @@
 
 		<input type="submit" value="Entrar" id="butEntrar"/> <br/><br/>
 
-		<input type="submit" value="Cancelar" id="butCancelar"/> 
+		<a href="https://www.google.com.br" id="esqSenha">Esqueci minha senha</a>
 	
 		</form>
 		</div>
