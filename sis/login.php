@@ -1,23 +1,30 @@
 <!doctype html>
-<html>
+<html lang="pt-br">
 <head>
 	<link rel="stylesheet" type="text/css" href="css.css">
 	<meta charset="utf-8">
 	<title>Autenticação - LOGIN</title>
 
 </head>
-<body>
-<form method="post" action="userauthentication2.php" id="form">
+<body > 
+	<center>
+	<div id="divConteudo">
+		<div id="divCentral">
 
-<input type="text" name="email" placeholder="E-mail" /><br/><br/>
-<input type="password" name="senha" placeholder="Senha"/><br/><br/>
+			<img src="logoRsa.jpg" id="imgLogo">
 
-<input type="submit" value="Entrar"/> 
+		<form method="post" action="userauthentication2.php" id="form">
 
-<a href="cadastro.php">
-<input type=""</a>		
- 
+		<input type="text" name="email" placeholder="E-mail" id="campLogin" /><br/><br/>
+		<input type="password" name="senha" placeholder="Senha" id="campSenha"/><br/><br/>
 
-</form>
+		<input type="submit" value="Entrar" id="butEntrar"/> <br/><br/>
+
+		<input type="submit" value="Cancelar" id="butCancelar"/> 
+	
+		</form>
+		</div>
+	</div>
+	</center>
 </body>
 </html>
