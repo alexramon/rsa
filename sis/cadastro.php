@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 	<center>
 		<img src="img/logoTopo.jpg" id="imgTopo">
@@ -18,20 +19,52 @@
 		<div  class="container">
 
 			<form method="post" action="cadastrarUsuario.php">
-
-				<input type="text" name="name" placeholder="Nome"/><br/><br/>
-				<input type="text" name="matricula" placeholder="Matrícula"/><br/><br/>
-				<input type="email" name="email" placeholder="E-mail"/><br/><br/>
-				<input type="text" name="curso" placeholder="Curso"/> <br/><br/>
-				<input type="password" name="senha" placeholder="Senha"/><br/><br/>
-
-<!--<input type="submit" value="Entrar"/>-->
-
+				<!-- Campo -->
+				<div class="input-group"  class="container">
+					 <span class="input-group-addon" id="redimencionar"></span>
+					 <input type="text" class="form-control" placeholder="Nome" name="nome" 
+					 aria-describedby="basic-addon1" required>
+				</div>
+				<br/>
+				<!-- Campo -->
+				<div class="input-group"  class="container">
+					 <span class="input-group-addon" id="redimencionar"></span>
+					 <input type="text" class="form-control" placeholder="Matrícula" name="matricula" 
+					 aria-describedby="basic-addon1" pattern="[0-9]+$" required>
+				</div>
+				<br/>
+				<!-- Campo -->
+				<div class="input-group"  class="container">
+					 <span class="input-group-addon" id="redimencionar"></span>
+					 <input type="text" class="form-control" placeholder="E-mail" name="email" 
+					 aria-describedby="basic-addon1" required>
+				</div>
+				<br/>
+				<!-- Campo -->
+				<div class="input-group"  class="container">
+					 <span class="input-group-addon" id="redimencionar"></span>
+					 <input type="text" class="form-control" placeholder="Curso" name="curso" 
+					 aria-describedby="basic-addon1" required>
+				</div>
+				<br/>
+				<!-- Campo -->
+				<div class="input-group"  class="container">
+					 <span class="input-group-addon" id="redimencionar"></span>
+					 <input type="password" class="form-control" placeholder="Senha" name="senha"
+					  aria-describedby="basic-addon1" required>
+				</div>
+				<br/>
+				<!-- Botão -->
 				<ul class="nav nav-pills nav-stacked" >
-					<li role="presentation" class="active"><button class="btn btn-default" type="submit">Cadastrar</button></li>		  
+					<li role="presentation" class="active"><button class="btn btn-default" 
+						type="submit" name="entrar">Cadastrar</button></li>
+						<input type="hidden" name="hash" value="cadastrar">
+						<br>
+
+					<li role="presentation" class="active"><button class="btn btn-default" 
+						type="submit" name="cancelar">Cancelar</button></li>
+								  
 				</ul>
-				
-			
 
 			</form>
 

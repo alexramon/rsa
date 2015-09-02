@@ -9,26 +9,22 @@ $senha = $_POST["senha"];
 $sql = ("SELECT * FROM usuarios WHERE matricula = '$matricula' AND senha = '$senha'") or die(mysql_error());
 
 $result = mysql_query($sql, $conexao);
-
 $dados = mysql_fetch_array($result);
 
-if(!strcmp($senha, $dados["senha"]))
-{
-	$_SESSION["matricula"]== $dados["matricula"]; 
-	$_SESSION["senha"]== $dados["senha"]; 
-
-	header("Location: https://google.com.br"); 
-	exit;
-}
-else 
-{ 
-	//echo "Dados Invalidos!"; 
+if(mysql_num_rows ($result) > 0)
+  {
+	$_SESSION['matricula'] = $matricula; 
+	$_SESSION['senha'] = $senha;
+	$_SESSION['nome']= $dados["nome"];
+	$_SESSION['curso']= $dados["curso"];
+	header("Location: index.php"); 
+  }
+   else 
+  { 
 	echo '<script type="text/javascript">
 	alert("Dados Inválidos!");
-	
+	window.location="loginTemp.php";	
 	</script>';
-
-}
-
+  }
 ?>
 
