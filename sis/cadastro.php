@@ -28,6 +28,7 @@ header("Location:login.php");
 			<form method="post" action="cadastrarUsuario.php">
 				<!-- Campo -->
 				<div class="input-group"  class="container">
+<<<<<<< HEAD
 					 <span class="input-group-addon" class="redimencionar">Nome</span>
 					 <input type="text" class="form-control" name="nome" 
 					 aria-describedby="basic-addon1" required>
@@ -54,15 +55,46 @@ header("Location:login.php");
 					 <span class="input-group-addon" class="redimencionar">Matrícula</span>
 					 <input type="text" class="form-control" name="matricula" 
 					 aria-describedby="basic-addon1" pattern="[0-9]+$" required>
+=======
+					 <span class="input-group-addon" id="redimencionar"></span>
+					 <input type="text" class="form-control" placeholder="Nome" name="nome" 
+					 aria-describedby="basic-addon1" required>
 				</div>
 				<br/>
 				<!-- Campo -->
 				<div class="input-group"  class="container">
+					 <span class="input-group-addon" id="redimencionar"></span>
+					 <input type="text" class="form-control" placeholder="Matrícula" name="matricula" 
+					 aria-describedby="basic-addon1" pattern="[0-9]+$" required>
+				</div>
+				<br/>
+				<!-- Campo -->
+				<div class="input-group"  class="container">
+					 <span class="input-group-addon" id="redimencionar"></span>
+					 <input type="text" class="form-control" placeholder="E-mail" name="email" 
+					 aria-describedby="basic-addon1" required>
+				</div>
+				<br/>
+				<!-- Campo -->
+				<div class="input-group"  class="container">
+					 <span class="input-group-addon" id="redimencionar"></span>
+					 <input type="text" class="form-control" placeholder="Curso" name="curso" 
+					 aria-describedby="basic-addon1" required>
+>>>>>>> eb1517ef85a78b4c1247b2318159fb89d027fc3a
+				</div>
+				<br/>
+				<!-- Campo -->
+				<div class="input-group"  class="container">
+<<<<<<< HEAD
 					 <span class="input-group-addon" class="redimencionar">Senha</span>
+=======
+					 <span class="input-group-addon" id="redimencionar"></span>
+>>>>>>> eb1517ef85a78b4c1247b2318159fb89d027fc3a
 					 <input type="password" class="form-control" placeholder="Senha" name="senha"
 					  aria-describedby="basic-addon1" required>
 				</div>
 				<br/>
+<<<<<<< HEAD
 
 				<!-- Botão -->
 				<div class="bt">			
@@ -82,6 +114,19 @@ header("Location:login.php");
 				</ul>
 				</div>
 			
+=======
+				<!-- Botão -->
+				<ul class="nav nav-pills nav-stacked" >
+					<li role="presentation" class="active"><button class="btn btn-default" 
+						type="submit" name="entrar">Cadastrar</button></li>
+						<input type="hidden" name="hash" value="cadastrar">
+						<br>
+
+					<li role="presentation" class="active"><button class="btn btn-default" 
+						type="submit" name="cancelar">Cancelar</button></li>
+								  
+				</ul>
+>>>>>>> eb1517ef85a78b4c1247b2318159fb89d027fc3a
 
 
 			</form>
