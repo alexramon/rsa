@@ -4,6 +4,7 @@ if(!isset($_SESSION['matricula']) && !isset($_SESSION['senha'])){
 header("Location:login.php");
 }
 ?>
+
 <!doctype html>
 <html>
 <head>
@@ -28,7 +29,6 @@ header("Location:login.php");
 			<form method="post" action="cadastrarUsuario.php">
 				<!-- Campo -->
 				<div class="input-group"  class="container">
-<<<<<<< HEAD
 					 <span class="input-group-addon" class="redimencionar">Nome</span>
 					 <input type="text" class="form-control" name="nome" 
 					 aria-describedby="basic-addon1" required>
@@ -40,104 +40,58 @@ header("Location:login.php");
 					 aria-describedby="basic-addon1" required>
 				</div>
 				<br/>
+
 				<select class="form-control" name="curso">
-    <option value="Curso">Curso</option>
-    <option value="Administração">Administração</option> 
-    <option value="Análise de Sistemas">Análise de Sistemas</option>
-    <option value="Ciências Contábeis">Ciências Contábeis</option>
-    <option value="Educação Física">Educação Física</option>
-    <option value="Enfermagem">Enfermagem</option>
-    <option value="Psicologia">Psicologia</option>
-    <option value="Serviço Social">Serviço Social</option>
-</select>
+				    <option value="Curso">Curso</option>
+				    <option value="Administração">Administração</option> 
+				    <option value="Análise de Sistemas">Análise de Sistemas</option>
+				    <option value="Ciências Contábeis">Ciências Contábeis</option>
+				    <option value="Educação Física">Educação Física</option>
+				    <option value="Enfermagem">Enfermagem</option>
+				    <option value="Psicologia">Psicologia</option>
+				    <option value="Serviço Social">Serviço Social</option>
+				</select>
+
 				<br/>
 				<div class="input-group"  class="container">
 					 <span class="input-group-addon" class="redimencionar">Matrícula</span>
-					 <input type="text" class="form-control" name="matricula" 
-					 aria-describedby="basic-addon1" pattern="[0-9]+$" required>
-=======
-					 <span class="input-group-addon" id="redimencionar"></span>
-					 <input type="text" class="form-control" placeholder="Nome" name="nome" 
-					 aria-describedby="basic-addon1" required>
-				</div>
-				<br/>
-				<!-- Campo -->
-				<div class="input-group"  class="container">
-					 <span class="input-group-addon" id="redimencionar"></span>
-					 <input type="text" class="form-control" placeholder="Matrícula" name="matricula" 
+					 <input type="text" class="form-control "  name="matricula" 
 					 aria-describedby="basic-addon1" pattern="[0-9]+$" required>
 				</div>
 				<br/>
+
 				<!-- Campo -->
 				<div class="input-group"  class="container">
-					 <span class="input-group-addon" id="redimencionar"></span>
-					 <input type="text" class="form-control" placeholder="E-mail" name="email" 
-					 aria-describedby="basic-addon1" required>
-				</div>
-				<br/>
-				<!-- Campo -->
-				<div class="input-group"  class="container">
-					 <span class="input-group-addon" id="redimencionar"></span>
-					 <input type="text" class="form-control" placeholder="Curso" name="curso" 
-					 aria-describedby="basic-addon1" required>
->>>>>>> eb1517ef85a78b4c1247b2318159fb89d027fc3a
-				</div>
-				<br/>
-				<!-- Campo -->
-				<div class="input-group"  class="container">
-<<<<<<< HEAD
 					 <span class="input-group-addon" class="redimencionar">Senha</span>
-=======
-					 <span class="input-group-addon" id="redimencionar"></span>
->>>>>>> eb1517ef85a78b4c1247b2318159fb89d027fc3a
-					 <input type="password" class="form-control" placeholder="Senha" name="senha"
+					 <input type="password" class="form-control"  name="senha"
 					  aria-describedby="basic-addon1" required>
 				</div>
 				<br/>
-<<<<<<< HEAD
 
 				<!-- Botão -->
-				<div class="bt">			
-				<ul class="nav nav-pills nav-stacked" >
-					<li role="presentation" class="active"><button class="btn btn-default" 
-						type="submit" name="entrar">Cadastrar</button></li>
-					<input type="hidden" name="hash" value="cadastrar">
-						<br>
+				<div class="btn-group">			
+						<ul class="nav nav-pills nav-stacked" >
+							<li role="presentation" class="active"><button class="btn btn-default" 
+								type="submit" name="entrar"id="btcadastrar">Cadastrar</button></li>
+							<input type="hidden" name="hash" value="cadastrar">
+								<br>
 
-					<li role="presentation" class="active"><button class="btn btn-default" 
-						type="reset" name="cancelar">Limpar</button></li>
-						<br>
+							<li role="presentation" class="active"><button class="btn btn-default" 
+								type="reset" name="cancelar"id="btlinpar">Limpar</button></li>
+								<br>
 
-					<li role="presentation" class="active"><button class="btn btn-default" 
-						 input type="hidden" name="cancelar" onclick="location.href='index.php'">Voltar</button></li>
-						 <br>								  
-				</ul>
-				</div>
-			
-=======
-				<!-- Botão -->
-				<ul class="nav nav-pills nav-stacked" >
-					<li role="presentation" class="active"><button class="btn btn-default" 
-						type="submit" name="entrar">Cadastrar</button></li>
-						<input type="hidden" name="hash" value="cadastrar">
-						<br>
-
-					<li role="presentation" class="active"><button class="btn btn-default" 
-						type="submit" name="cancelar">Cancelar</button></li>
-								  
-				</ul>
->>>>>>> eb1517ef85a78b4c1247b2318159fb89d027fc3a
-
-
-			</form>
-
-			
-
+							<li role="presentation" class="active"><button class="btn btn-default" 
+								 input type="hidden" name="cancelar" onclick="location.href='index.php'" 
+								 id="btvoltar">Voltar</button></li>
+								 <br>								  
+						</ul>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
-	</div>
 	<footer>
-				<p>MonstrosSA © 2015 - Copyright</p>
+				<p>RSA-Rede Social Academica © 2015 - Copyright</p>
 			</footer>
 
 

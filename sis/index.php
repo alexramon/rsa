@@ -13,10 +13,10 @@ header("Location:login.php");
 	
 	<title>TELA HOME</title>
 
-	<meta charset=utf-8>
-	<meta name=description content="">
+	<meta charset="UTF-8">
+	<meta name="description" content="">
 	<link rel="stylesheet" href="style.css">
-	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="bootstrap-them.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap-theme.css.map">
 	<link rel="stylesheet" type="text/css" href="bootstrap.css.map">
@@ -39,11 +39,7 @@ header("Location:login.php");
 				<table>
 					<td>
 						<tr><img src="img/ico/usuario.jpg" class="imgUsuario"></tr><br>
-<<<<<<< HEAD
 						<tr >Matrícula: <?php echo $_SESSION['matricula']?></tr><br>
-=======
-						<tr >Matricula: <?php echo $_SESSION['matricula']?></tr><br>
->>>>>>> eb1517ef85a78b4c1247b2318159fb89d027fc3a
 						<tr>Nome: <?php echo $_SESSION['nome']?></tr><br>
 						<tr>Curso: <?php echo $_SESSION['curso']?></tr><br>
 					</td>					
@@ -66,16 +62,11 @@ header("Location:login.php");
 
 				  <div class="panel-body">
 							<a href="#"><img src="img/ico/infor.png"class="botaoPadrao"></a>
-<<<<<<< HEAD
 							<a href="cadastro.php"><img src="img/ico/localiza.png" class="botaoPadrao"></a>
-=======
-							<a href="#"><img src="img/ico/localiza.png" class="botaoPadrao"></a>
->>>>>>> eb1517ef85a78b4c1247b2318159fb89d027fc3a
 							<a href="deslogar.php"><img src="img/ico/sair.png" class="botaoPadrao"></a>
 							
 				   </div>
 			 </div>
-<<<<<<< HEAD
 			 		<footer>
 				<p>MonstrosSA © 2015 - Copyright</p>
 			</footer>
@@ -84,14 +75,5 @@ header("Location:login.php");
          
 	</center>
 
-=======
-		</div>
-         
-	</center>
-
-
-
-
->>>>>>> eb1517ef85a78b4c1247b2318159fb89d027fc3a
 </body>
 </html>

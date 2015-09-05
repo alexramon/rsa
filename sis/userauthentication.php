@@ -23,7 +23,7 @@ if(mysql_num_rows ($result) > 0)
   { 
 	echo '<script type="text/javascript">
 	alert("Dados Inválidos!");
-	window.location="loginTemp.php";	
+	window.location="login.php";	
 	</script>';
   }
 ?>
